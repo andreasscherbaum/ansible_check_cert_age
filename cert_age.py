@@ -21,7 +21,7 @@ class FilterModule(object):
         '''Query a certificate (1st parameter) and check if the remaining valid
            time is at least as many days as specified in the 2nd parameter
            Returns 0 if the cert is valid for the specified number of days
-           Returns 0 if the cert is not valid for that time
+           Returns 1 if the cert is not valid for that time
         '''
 
         # first check if the cert exists
